@@ -31,7 +31,7 @@ async function readMtcarsAsMultipleJSON(filePath) {
       }
     }
 
-    return objects.length === 1 ? objects[0] : objects;
+    return objects.length === 1 ? objects[0] : objects; 
   } catch (err) {
     console.error('Error reading file:', err);
     throw new Error('Cannot parse input file properly: ' + filePath);
